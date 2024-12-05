@@ -5,15 +5,20 @@ public static class CommonExtensions
     {
         Dictionary<string, string> characters = new()
         {
-            {"ü","u"},
-            {"ş","s"},
-            {"ı","i"},
-            {"ö","o"},
-            {"ç","c"},
-            {"ğ","g"},
-            {"#","sharp"},
+
+            { "ü","u" },
+            { "ş", "s" },
+            { "ı", "i" },
+            { "ö", "o" },
+            { "ç", "c" },
+            { "ğ", "g" },
+            { "#", "sharp" },
+            { "?", "" }
         };
+
+
         string url = str.ToLower();
+        
         foreach (var c in characters)
         {
             url = url.Replace(c.Key, c.Value);
@@ -23,6 +28,5 @@ public static class CommonExtensions
         url = string.Join("-", urls);
 
         return url;
-
     }
 }

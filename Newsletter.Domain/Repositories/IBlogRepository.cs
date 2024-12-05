@@ -2,6 +2,6 @@
 using Newsletter.Domain.Entities;
 
 namespace Newsletter.Domain.Repositories;
-public interface IBlogRepository :IRepository<Blog>
+public interface IBlogRepository : IRepository<Blog>
 {
 }

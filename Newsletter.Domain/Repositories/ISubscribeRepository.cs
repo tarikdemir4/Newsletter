@@ -5,5 +5,4 @@ namespace Newsletter.Domain.Repositories;
 
 public interface ISubscribeRepository : IRepository<Subscribe>
 {
-
 }
